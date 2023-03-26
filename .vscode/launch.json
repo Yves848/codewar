@@ -6,13 +6,17 @@
   "configurations": [
 
     {
+      "name": "ts-node",
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": [
-        "<node_internals>/**"
+      "args": [
+        "${relativeFile}"
       ],
-      "program": "${workspaceFolder}/isPangram/test.js"
+      "runtimeArgs": [
+        
+      ],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
